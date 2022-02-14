@@ -29,6 +29,7 @@
 .tag-name {
     padding-left: 65px;
     color: #a1c8eb;
+    font-size: 15px;
 }
 
 .icon-edit {
@@ -62,3 +63,5 @@
         float: none;
     }
 }
+
+ 
