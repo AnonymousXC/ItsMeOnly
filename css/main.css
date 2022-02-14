@@ -61,14 +61,16 @@ h1 {
     user-select: none;
     cursor: text;
     font-size: 24px;
+    height: 60px;
 }
 
 #typed {
     text-decoration: underline;
-    text-underline-offset: 1px;
+    text-underline-offset: 3px;
     text-decoration-color: #149ddd;
     text-decoration-thickness: 3px;
     user-select: none;
+    height: auto;
 }
 
 

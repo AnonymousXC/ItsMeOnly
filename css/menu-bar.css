@@ -5,7 +5,7 @@
     left: 0px;
     background-color: #040b14;
     position: fixed;
-    transition: left 2s;
+    transition: left 1s ease-in-out;
     z-index: 5;
     text-align: center;
 }
@@ -102,6 +102,6 @@
 
 @media only screen and (max-width: 1000px) {
     #side-bar {
-        left: -500px;
+        left: -300px;
     }
 }
