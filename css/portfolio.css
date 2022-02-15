@@ -1,12 +1,11 @@
-
 #container-5 {
     position: relative;
     left: 300px;
-    width: calc(100%-300px);
+    width: calc(100% - 320px);
     height: 100vh;
-    padding-top: 50px;
-    padding-left: 8px;
     background-color: var(--bg-color-2);
+    padding: 10px;
+    padding-top: 50px;
     transition: all 1s;
 }
 
@@ -19,7 +18,8 @@
     text-align: center;
     padding: 5px;
     margin-top: 35px;
-    left: calc(50% - 300px);
+    left: calc(50% - 320px);
+    transform: translateX(calc(-50% + 320px));
     overflow: hidden;
     padding: 10px;
 }
