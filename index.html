@@ -19,8 +19,10 @@
     <link rel="stylesheet" href="css/skill.css">
     <link rel="stylesheet" href="css/hamburger menu.css">
     <link rel="stylesheet" href="css/review status.css">
+    <link rel="stylesheet" href="css/portfolio.css">
     <!-- Local JAVASCRIPT-->
     <script src="javascript/main.js" defer></script>
+    <script src="javascript/tabs.js" defer></script>
 
 </head>
 <body onresize="correct_toggle()">
@@ -46,43 +48,43 @@
             <a class="icon-social" href="html/discord.html" target="_blank">
                 <i class="bi bi-discord"></i>
             </a>
-            <a class="icon-social" href="html/discord.html" target="_blank">
+            <a class="icon-social" href="https://anonymousxcv.itch.io/" target="_blank">
                 <img src="img/itch.io.png" alt="" style="width: 18px;height: 18px;color: transparent;">
             </a>
         </div>
         <div class="buttons-all" style="padding-top: 10px;">
             <div class="button">
-                <a href="#container-1" class="section-link">
+                <a href="#container-1" class="section-link" id="home-btn">
                     <i class="bi bi-house-fill icon-button"></i>
                     <span class="button-name">Home</span>
                 </a>
             </div>
             <div class="button">
-                <a href="#container-2" class="section-link">
+                <a href="#container-2" class="section-link" id="about-btn">
                     <i class="bi bi-person-fill icon-button"></i>
                     <span class="button-name">About</span>
                 </a>
             </div>
             <div class="button">
-                <a href="#container-3" class="section-link">
+                <a href="#container-3" class="section-link" id="skill-btn">
                     <i class="bi bi-file-earmark-bar-graph-fill icon-button"></i>
                     <span class="button-name">Skills</span>
                 </a>
             </div>
             <div class="button">
-                <a href="#container-4" class="section-link">
+                <a href="#container-4" class="section-link" id="portfolio-btn">
                     <i class="bi bi-credit-card-2-front-fill icon-button"></i>
                     <span class="button-name">Portfolio</span>
                 </a>
             </div>
             <div class="button">
-                <a href="#container-5" class="section-link">
+                <a href="#container-5" class="section-link" id="services-btn">
                     <i class="bi bi-wrench-adjustable-circle-fill icon-button"></i>
                     <span class="button-name">Services</span>
                 </a>
             </div>
             <div class="button">
-                <a href="#container-1" class="section-link">
+                <a href="#container-1" class="section-link" id="reviews-btn">
                     <i class="bi bi-file-earmark-bar-graph-fill icon-button"></i>
                     <span class="button-name">Reviews</span>
                 </a>
@@ -108,7 +110,7 @@
             I’m an experienced developer from India. I mainly code Games using Godot Game Engine but I can code in other languages such as java, Javascript, python, etc. if required. Each day I work on improving my skills and developing new ones. You can contact me by using any of my social links (Discord recommended).
         </p>
         <div id="img-container">
-            <img src="./img/about.jpg" alt="" id="about-img" data-aos="fade-right">
+            <img src="img/about.jpg" alt="" id="about-img" data-aos="fade-right">
             <div id="side-txt" data-aos="fade-left">
                 <h2 style="text-decoration: none; font-size: 28px;">Developer</h2>
                 <p class="common-text" id="b-txt"> 
@@ -198,7 +200,23 @@
             <p class="common-text tag-name"><strong>Cups of Coffee</strong></p>
         </div>
     </div>
+    <!-- Container 5 Starts -->
     <div id="container-5">
+        <h2>Portfolio</h2>
+        <div class="tabs">
+            <button class="tablinks common-text" onclick="openTab(event, 'All')" id="opened">All</button>
+            <button class="tablinks common-text" onclick="openTab(event, 'Games')">Games</button>
+            <button class="tablinks common-text" onclick="openTab(event, 'Apps')">Apps</button>
+            <button class="tablinks common-text" onclick="openTab(event, 'Websites')">Websites</button>
+        </div>
+        <div id="All" class="tabcontent">
+          </div>
+        <div id="Games" class="tabcontent">
+          </div>
+        <div id="Apps" class="tabcontent">
+          </div>
+        <div id="Websites" class="tabcontent">
+          </div>
     </div>
 </body>
 <script src="javascript/typing.js"></script>

@@ -23,6 +23,7 @@
     float: left;
     flex-direction: row;
     padding: 5px;
+    left: 2%;
 }
 
 
@@ -73,7 +74,7 @@
         left: 0px;
     }
     .progressbars {
-        max-width: 95%;
+        max-width: 90%;
         width: 100%;
     }
 }

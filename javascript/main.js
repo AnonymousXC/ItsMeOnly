@@ -1,5 +1,15 @@
 let side_bar = document.getElementById("side-bar");
 let menu_btn = document.getElementById("toogle-menu");
+let container_1 = document.getElementById("container-1");
+let container_2 = document.getElementById("container-2");
+let container_3 = document.getElementById("container-3");
+let container_5 = document.getElementById("container-5");
+let home_btn = document.getElementById("home-btn");
+let about_btn = document.getElementById("about-btn");
+let skill_btn = document.getElementById("skill-btn");
+let portfolio_btn = document.getElementById("portfolio-btn");
+let services_btn = document.getElementById("services-btn");
+let reviews_btn = document.getElementById("reviews-btn");
 
 
 function toogle_menu() {
@@ -19,8 +29,12 @@ function correct_toggle() {
     let width = window.innerWidth;
     if(width >= 1000){
         side_bar.style.left = "0px"
+        menu_btn.innerHTML = "<i class=\"bi bi-x-lg\"></i>";
     }
     else {
         side_bar.style.left = "-300px"
+        menu_btn.innerHTML = "<i class=\"bi bi-list\"></i>";
     }
 }
+
+
