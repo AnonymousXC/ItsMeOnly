@@ -2,11 +2,13 @@
     position: relative;
     left: 300px;
     width: calc(100% - 320px);
-    height: 100vh;
+    height: auto;
     background-color: var(--bg-color-2);
     padding: 10px;
     padding-top: 50px;
     transition: all 1s;
+    overflow: hidden;
+    padding-bottom: 30px;
 }
 
 .tabs {
@@ -22,6 +24,7 @@
     transform: translateX(calc(-50% + 320px));
     overflow: hidden;
     padding: 10px;
+    user-select: none;
 }
 
 .tablinks {
@@ -35,10 +38,48 @@
     font-weight: 500;
     line-height: 1;
     text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
 }
 
-.tablinks:nth-child(1) {
+
+.active {
     color: var(--complementary-color);
+}
+
+.tabcontent {
+    position: relative;
+    width: 88%;
+    height: 100%;
+    display: block;
+    margin-top: 50px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.items {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    background-color: /*transparent*/#202225;
+    border-radius: 10px;
+}
+
+
+.tablinks:hover {
+    color: #149ddd;
+}
+
+.git-repo {
+    width: 206px;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 @media only screen and (max-width: 1000px) {
