@@ -1,0 +1,12 @@
+#container-6 {
+    position: relative;
+    left: 300px;
+    width: calc(100% - 320px);
+    height: 100vh;
+    background-color: var(--bg-color-1);
+    padding: 10px;
+    padding-top: 50px;
+    transition: all 1s;
+    overflow: hidden;
+    padding-bottom: 30px;
+}

@@ -14,8 +14,9 @@ h2 {
     font-size: 32px;
     text-decoration: underline;
     text-decoration-color: var(--ul-color);
-    text-underline-offset: 2px;
+    text-underline-offset: 8px;
     padding: 8px;
+    padding-bottom: 12px;
 }
 
 #about {
