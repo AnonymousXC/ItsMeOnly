@@ -24,13 +24,14 @@
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/scrollbar.css">
     <link rel="stylesheet" href="css/people review.css">
+    <link rel="stylesheet" href="css/scroll top.css">
     <!-- Local JAVASCRIPT-->
     <script src="javascript/aos.js" defer></script>
     <script src="javascript/main.js" defer></script>
     <script src="javascript/tabs.js" defer></script>
 
 </head>
-<body onresize="correct_toggle()">
+<body onresize="correct_toggle()" onscroll="scroll_btn()">
 
     <button id="toogle-menu" onclick="toogle_menu()">
         <i class="bi bi-list"></i>
@@ -186,7 +187,7 @@
     <div id="container-4">
         <div class="boxes" data-aos="fade-up" data-aos-delay="0">
             <i class="bi bi-emoji-smile icon-edit"></i>
-            <span class="count-num counter">4,454</span>
+            <span class="count-num counter">4,454+</span>
             <p class="common-text tag-name"><strong>Happy People</strong></p>
         </div>
         <div class="boxes" data-aos="fade-up" data-aos-delay="100">
@@ -201,7 +202,7 @@
         </div>
         <div class="boxes" data-aos="fade-up" data-aos-delay="300">
             <i class="bi bi-cup-fill icon-edit"></i>
-            <span class="count-num counter">250</span>
+            <span class="count-num counter">250+</span>
             <p class="common-text tag-name"><strong>Cups of Coffee</strong></p>
         </div>
     </div>
@@ -300,7 +301,7 @@
         <h2>Services</h2>
         <div id="services-all">
             <div class="service"  data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom" data-aos-delay="0" data-aos-offset="200">
+            data-aos-anchor-placement="top-bottom" data-aos-delay="0" data-aos-offset="140">
                 <div class="icon-services">
                     <i class="bi bi-controller"></i>
                 </div>
@@ -308,7 +309,7 @@
                 <p class="common-text services-txt">Experienced in developing a Game using the Godot Game Engine according to your needs. Fully flexible, portable and high quality games.</p>
             </div>
             <div class="service" data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom" data-aos-delay="100" data-aos-offset="200">
+            data-aos-anchor-placement="top-bottom" data-aos-delay="50" data-aos-offset="140">
                 <div class="icon-services">
                     <i class="bi bi-terminal-fill"></i>
                 </div>
@@ -316,7 +317,7 @@
                 <p class="common-text services-txt">High quality, highly flexible apps made using Python or Electron js. Gui based, Console Based apps with easy to use guide.</p>
             </div>
             <div class="service" data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom" data-aos-delay="200" data-aos-offset="200">
+            data-aos-anchor-placement="top-bottom" data-aos-delay="100" data-aos-offset="140">
                 <div class="icon-services">
                     <i class="bi bi-globe"></i>
                 </div>
@@ -324,7 +325,7 @@
                 <p class="common-text services-txt">Want a cool website like this? Expert in making static websites with source code of every project. Fully responsive, scalable and flexible websites.</p>
             </div>
             <div class="service" data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom" data-aos-delay="300" data-aos-offset="200">
+            data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-offset="140">
                 <div class="icon-services">
                     <i class="bi bi-box2-fill"></i>
                 </div>
@@ -332,7 +333,7 @@
                 <p class="common-text services-txt">Mini projects using Arduino uno. Small, cool hardware projects made using Arduino and C#/C++. </p>
             </div>
             <div class="service" data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-offset="200">
+            data-aos-anchor-placement="top-bottom" data-aos-delay="200" data-aos-offset="140">
                 <div class="icon-services">
                     <i class="bi bi-robot"></i>
                 </div>
@@ -342,8 +343,45 @@
         </div>
     </div>
     <div id="container-7">
-        <h2>Clients & Reviews</h2>
+        <h2 style="padding-bottom: 30px; margin-bottom: 30px;">Clients & Reviews</h2>
+        <div class="reviews">
+            <div class="review-box">
+                <img src="img/client 1.png" alt="" class="client-img" style="background-color: white;"> <br>
+                <h3 class="client-name">Xananax</h3> <br>
+                <h4 class="review-stars">5 star review</h4> <br>
+                <p class="review-text common-text">
+                    No Comments
+                </p>
+            </div>
+            <div class="review-box">
+                <img src="img/client 2.png" alt="" class="client-img" style="background-color: white;"> <br>
+                <h3 class="client-name">HeroRobb</h3> <br>
+                <h4 class="review-stars">5 star review</h4> <br>
+                <p class="review-text common-text">
+                    This is nice to have. Thank you for making it.
+                </p>
+            </div>
+            <div class="review-box">
+                <img src="img/client 3.png" alt="" class="client-img" style="background-color: white;"> <br>
+                <h3 class="client-name">ExploreGameDev</h3> <br>
+                <h4 class="review-stars">5 star review</h4> <br>
+                <p class="review-text common-text">
+                    Well done.  Nice simple UI, easy to navigate. Use of color is great.
+                </p>
+            </div>
+            <div class="review-box">
+                <img src="img/client 4.png" alt="" class="client-img" style="background-color: white;"> <br>
+                <h3 class="client-name">night_glider</h3> <br>
+                <h4 class="review-stars">5 star review</h4> <br>
+                <p class="review-text common-text">
+                    This is really helpful!
+                </p>
+            </div>
+        </div>
     </div>
+    <button id="scroll-top-btn" onclick="scroll_zero()">
+        <i class="bi bi-arrow-bar-up"></i>
+    </button>
 </body>
 <script src="javascript/typing.js"></script>
 <script src="javascript/counting.js" defer></script> 

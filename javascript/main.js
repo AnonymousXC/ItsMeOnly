@@ -10,6 +10,7 @@ let skill_btn = document.getElementById("skill-btn");
 let portfolio_btn = document.getElementById("portfolio-btn");
 let services_btn = document.getElementById("services-btn");
 let reviews_btn = document.getElementById("reviews-btn");
+let scroll_btn_element = document.getElementById("scroll-top-btn")
 
 
 function toogle_menu() {
@@ -37,4 +38,18 @@ function correct_toggle() {
     }
 }
 
+function scroll_btn() {
+    let scroll = window.scrollY
+    if(scroll >= 200){
+        scroll_btn_element.style.display = "flex"
+    }
+    else {
+        scroll_btn_element.style.display = "none"
+    }
+    console.log(scroll);
+}
 
+
+function scroll_zero() {
+    window.scrollTo(0,0)
+}
