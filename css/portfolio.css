@@ -49,7 +49,7 @@
 
 .tabcontent {
     position: relative;
-    width: 88%;
+    width: 90%;
     height: auto;
     display: block;
     margin-top: 50px;
@@ -83,8 +83,11 @@
 }
 
 .all-items {
-    width: 88%;
+    width: 100% !important;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -95,42 +98,5 @@
     .tabs {
         left: 50%;
         transform: translateX(-50%);
-    }
-}
-
-@media only screen and (max-width: 1250px) {
-    .all-items {
-        width: 63%;
-    }
-}
-
-@media only screen and (max-width: 1210px) {
-    .all-items {
-        width: 78%;
-    }
-}
-
-
-@media only screen and (max-width: 999px) {
-    .all-items {
-        width: 88%;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .all-items {
-        width: 65%;
-    }
-}
-
-@media only screen and (max-width: 660px) {
-    .all-items {
-        width: 73%;
-    }
-}
-
-@media only screen and (max-width: 870px) {
-    .all-items {
-        width: min-content;
     }
 }

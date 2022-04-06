@@ -54,6 +54,7 @@
     align-items: center;
     float: left;
     margin: 5px;
+    transition: all 0.3s !important;
 }
 
 .links-sc {
@@ -64,7 +65,6 @@
 
 .button {
     text-align: left;
-    padding: 8px;
     padding-left: 50px;
     padding-top: 25px;
 }
@@ -92,6 +92,10 @@
 
 .section-link:hover {
     color: #149ddd;
+}
+
+.icon-social:hover {
+    background-color: var(--complementary-color); 
 }
 
 .bottom-txt {
