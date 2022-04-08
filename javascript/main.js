@@ -42,11 +42,11 @@ function scroll_btn() {
     let scroll = window.scrollY
     if(scroll >= 200){
         scroll_btn_element.style.display = "flex"
+        confetti.stop()
     }
     else {
         scroll_btn_element.style.display = "none"
     }
-    console.log(scroll);
 }
 
 

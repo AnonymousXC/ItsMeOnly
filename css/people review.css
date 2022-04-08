@@ -8,18 +8,19 @@
     padding-top: 50px;
     transition: all 1s;
     overflow: hidden;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     overflow: hidden;
 }
 
 
 .reviews {
-    width: 100%;
+    width: 375px;
     height: 85%;
     background-color: transparent;
-    overflow-x: auto !important;
+    overflow-x: hidden !important;
     display: flex;
     user-select: none;
+    margin: 0 auto;
 }
 
 .review-box {
