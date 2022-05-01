@@ -46,9 +46,10 @@ function scroll_btn() {
     }
     else {
         scroll_btn_element.style.display = "none"
-        confetti.start()
     }
 }
+
+confetti.start()
 
 
 function scroll_zero() {
