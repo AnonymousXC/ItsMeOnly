@@ -8,7 +8,7 @@ setInterval(() => {
         reviewCon[0].scrollTo(0,0)
     }
     if(isElementVisible(reviewCon[0])) 
-        confetti.start()
+    {}
 }, 2000)
 
 function isElementVisible(el) {
