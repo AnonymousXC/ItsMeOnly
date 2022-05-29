@@ -73,6 +73,8 @@
     text-decoration: none;
     text-align: left;
     color: #a8a9b4;
+    display: inline-block;
+    width: 100%;
 }
 
 
